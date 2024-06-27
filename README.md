@@ -1,2 +1,2 @@
-# LoM
-LoM - Legends of Mushroom Bot
+# LoM - Legends of Mushroom Bot
+
