@@ -1,0 +1,9 @@
+{
+    "EmulatorSettings": {
+        "ADB_IP": "127.0.0.1",
+        "ADB_Port": 5555
+    },
+    "MushroomSettings": {
+        "AFKReward": true
+    }
+}
