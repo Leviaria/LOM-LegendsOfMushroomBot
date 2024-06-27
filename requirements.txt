@@ -1,0 +1,4 @@
+Pillow
+adb-shell
+loguru
+tkinter
