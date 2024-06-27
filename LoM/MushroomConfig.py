@@ -51,7 +51,6 @@ def load_config():
         logger.add(log_file_path, level="DEBUG", format="{time} | {level} | {message}")
         logger.add(lambda msg: print(msg, end=""), level="DEBUG", format="{time} | {level} | {message}")
         
-        # Ensure EmulatorSettings and MushroomSettings are present and complete
         updated = False
         for section, settings in DEFAULT_CONFIG.items():
             if section not in config:
