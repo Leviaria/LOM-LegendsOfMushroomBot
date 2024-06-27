@@ -13,6 +13,13 @@ EMULATOR_CORRECT = "The emulator has the correct settings. The bot is ready to s
 DISPLAY_SIZE_INCORRECT = "Incorrect display size. Expected 720x1280."
 DISPLAY_DENSITY_INCORRECT = "Incorrect display density. Expected 240 DPI."
 DISPLAY_CHECK_FAILED = "Failed to check display properties: {error}"
+CLICK_FAILED = "Failed to execute click at ({x}, {y}): {error}"
+DEVICE_NOT_FOUND = "No ADB device found."
+SCREENSHOT_FAILED = "Failed to take screenshot: {error}"
+POPUP_FOUND = "Popup found"
+CLICKING_POPUP = "Clicking popup at (413, 203)"
+AFK_REWARD_FOUND = "AFK reward found"
+CLICKING_AFK_REWARD = "Clicking AFK reward at (361, 494)"
 
 BOT_STARTED = "Bot started."
 BOT_STOPPED = "Bot stopped."
