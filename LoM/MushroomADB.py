@@ -1,7 +1,7 @@
 # LoM/MushroomADB.py
 from adb_shell.adb_device import AdbDeviceTcp
 from loguru import logger
-from LoM.MushroomMessages import ADB_CONNECTED, ADB_FAILED, EMULATOR_CORRECT, DISPLAY_SIZE_INCORRECT, DISPLAY_DENSITY_INCORRECT, DISPLAY_CHECK_FAILED
+from LoM.MushroomMessages import ADB_CONNECTED, ADB_FAILED, EMULATOR_CORRECT, DISPLAY_SIZE_INCORRECT, DISPLAY_DENSITY_INCORRECT, DISPLAY_CHECK_FAILED, CLICK_FAILED
 
 def connect_adb(ip, port):
     try:
@@ -41,3 +41,9 @@ def initialize_adb(ip, port):
     else:
         logger.error(ADB_FAILED)
         return None
+
+def adb_click(device, x, y):
+    try:
+        device.shell(f'input tap {x} {y}')
+    except Exception as e:
+        logger.error(CLICK_FAILED.format(x=x, y=y, error=e))
